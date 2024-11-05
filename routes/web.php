@@ -117,8 +117,8 @@ Route::delete('/supprimerArticle', [App\Http\Controllers\Gerer_Articles::class,'
 
 Route::post('/ajouterArticle', [App\Http\Controllers\Gerer_Articles::class,'Ajouter_Article'])->name('Ajouter_Article');
 
-
-Route::get('bilan',[App\Http\Controllers\Bilan::class,'bilan']);
+Route::get("/years_Bilan",[App\Http\Controllers\Bilan::class,'Years_Bilan'])->name('Years_Bilan');
+Route::get('/bilan',[App\Http\Controllers\Bilan::class,'bilan']);
 Route::get('/produit_Epuise/{qnt?}',[App\Http\Controllers\Bilan::class,'produit_Epuise']);
 
 // Route::get("/listeEmployees2",function(Request $req){
